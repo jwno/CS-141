@@ -1,3 +1,2 @@
-# CS-141
-Concepts in Programming Languages I
+CS-141
 Racket &amp; Parse
