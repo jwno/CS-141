@@ -1,0 +1,5 @@
+(define fourth-element
+  (lambda(lst)
+    (let ((removed (rest(rest(rest lst)))))
+      (cond [(empty? removed) empty]
+            [(list? removed) (first removed)]))))

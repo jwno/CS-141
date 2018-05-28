@@ -1,0 +1,9 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname is-increasing) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
+(define (is-increasing? lst)
+  (cond
+    [(empty? lst) true]
+    [(empty? (rest lst)) true]
+    [(> (first lst) (first(rest lst))) false]
+    [else (is-increasing? (rest lst))]))

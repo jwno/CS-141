@@ -1,0 +1,7 @@
+(define is-increasing?
+  (lambda(lst)
+    (cond
+      [(empty? lst) #t]
+      [(empty? (rest lst)) #t]
+      [(> (first lst) (first(rest lst))) #f]
+      [else (is-increasing? (rest lst))])))
